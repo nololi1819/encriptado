@@ -1,0 +1,28 @@
+may 25, 2019 8:07:46 AM GenerarClave iniciarLog
+INFORMACIÓN: Sat May 25 08:07:46 CEST 2019 | Programa iniciado
+may 25, 2019 8:07:46 AM GenerarClave pedirDatosUsuario
+INFORMACIÓN: Sat May 25 08:07:46 CEST 2019 | Pidiendo datos usuario
+may 25, 2019 8:07:56 AM GenerarClave generarParejaClaves
+INFORMACIÓN: Sat May 25 08:07:56 CEST 2019 | Generando pareja de claves
+may 25, 2019 8:07:56 AM GenerarClave generarParejaClaves
+INFORMACIÓN: Sat May 25 08:07:56 CEST 2019 pareja de claves generada
+may 25, 2019 8:07:56 AM GenerarClave guardarTextoFicheroEncriptado
+INFORMACIÓN: Sat May 25 08:07:56 CEST 2019 | Guardando fichero encriptado
+may 25, 2019 8:07:56 AM GenerarClave desencriptar
+INFORMACIÓN: Sat May 25 08:07:56 CEST 2019 | Desencriptando fichero
+may 25, 2019 8:07:56 AM GenerarClave cerrarLog
+INFORMACIÓN: Sat May 25 08:07:56 CEST 2019 | app finalizada  
+may 25, 2019 8:08:06 AM GenerarClave iniciarLog
+INFORMACIÓN: Sat May 25 08:08:06 CEST 2019 | Programa iniciado
+may 25, 2019 8:08:06 AM GenerarClave pedirDatosUsuario
+INFORMACIÓN: Sat May 25 08:08:06 CEST 2019 | Pidiendo datos usuario
+may 25, 2019 8:08:14 AM GenerarClave generarParejaClaves
+INFORMACIÓN: Sat May 25 08:08:14 CEST 2019 | Generando pareja de claves
+may 25, 2019 8:08:15 AM GenerarClave generarParejaClaves
+INFORMACIÓN: Sat May 25 08:08:15 CEST 2019 pareja de claves generada
+may 25, 2019 8:08:15 AM GenerarClave guardarTextoFicheroEncriptado
+INFORMACIÓN: Sat May 25 08:08:15 CEST 2019 | Guardando fichero encriptado
+may 25, 2019 8:08:15 AM GenerarClave desencriptar
+INFORMACIÓN: Sat May 25 08:08:15 CEST 2019 | Desencriptando fichero
+may 25, 2019 8:08:15 AM GenerarClave cerrarLog
+INFORMACIÓN: Sat May 25 08:08:15 CEST 2019 | app finalizada  
