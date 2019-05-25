@@ -1,26 +1,26 @@
 # Encriptado de ficheros
 Encriptado y desencriptado de un fichero mediante clave
 
-## Instalaci髇 
+## Instalaci贸n 
 Importar proyecto en IDE de Java
 
 Eclipse:  
-![Importaci髇Eclipse](../doc/1.jpg)
+![Importaci贸nEclipse](../doc/1.jpg)
 
 Netbeans:  
-![Importaci髇Netbeans](../doc/2.jpg)
+![Importaci贸nNetbeans](../doc/2.jpg)
 
 
 ## Ejemplo de uso   
-Ejecutar el programa como aplicaci髇 de java, en eclipse o consola  por el fichero .jar e introducir los datos que se solicitan:   
+Ejecutar el programa como aplicaci贸n de java, en eclipse o consola  por el fichero .jar e introducir los datos que se solicitan:   
 ![Execute](../doc/3.jpg)  
 Comprobar que se han creado los ficheros  
 ![Ficheros creados](../doc/4.jpg)   
 Comprobar el contenido de los ficheros creados
-![Comprobaci髇 contenido ficheros](../doc/5.jpg)  
+![Comprobaci贸n contenido ficheros](../doc/5.jpg)  
 
-## Configuraci髇 de desarrollo
-Requiere instalaci髇 de Java 8, y de un navegador web. 
+## Configuraci贸n de desarrollo
+Requiere instalaci贸n de Java 8. 
 
 ## META
 ue57656@edu.xunta.es
