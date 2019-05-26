@@ -99,7 +99,7 @@ public class GenerarClave {
 			SecureRandom secureRandom = SecureRandom.getInstance("SHA1PRNG");
 			secureRandom.setSeed(semilla.getBytes());//asigno la semilla al objeto secureRandom
 			kg.init(128,secureRandom);//clave de longitud 128 bits
-			logger.log(Level.INFO, new Date() +" pareja de claves generada" );
+			logger.log(Level.INFO, new Date() +" claves generadas" );
 		} catch (NoSuchAlgorithmException e) {
 			logger.log(Level.SEVERE, e.getMessage());
 		}
