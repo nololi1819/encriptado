@@ -88,7 +88,7 @@ public class GenerarClave {
 	 * Método para generar  claves
 	 */
 	private void generarClaves() {
-		logger.log(Level.INFO, new Date() + " | Generando pareja de claves");	
+		logger.log(Level.INFO, new Date() + " | Generando claves");	
 		KeyGenerator kg = null;
 		
 		//configuro el keyGenerator
