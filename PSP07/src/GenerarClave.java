@@ -39,7 +39,7 @@ public class GenerarClave {
 	private void iniciarLog() {
 		logger = Logger.getLogger("PSP07_logger");//creo el logger
 		try {
-			//creo el fichero de log en la ruta del proyecto carpeta doc (refrescar para ver tras ejecución)
+			//creo el fichero de log en la ruta del proyecto carpeta doc (refrescar para ver tras ejecuciÃ³n)
 			String rutaLog = new File(".").getCanonicalPath() + File.separator +"doc"+
 					File.separator + "PSP07_log.txt";
 			File log = new File(rutaLog); 
@@ -61,7 +61,7 @@ public class GenerarClave {
 	
 	
 	/*
-	 * Método para pedir el usuario y la contraseña al usuario
+	 * MÃ©todo para pedir el usuario y la contraseÃ±a al usuario
 	 */
 	@SuppressWarnings("resource")
 	private void pedirDatosUsuario() {	
@@ -74,28 +74,28 @@ public class GenerarClave {
 			usuario = sc.nextLine();
 		}
 
-		//pido una contraseña de mínimo 8 caracteres
+		//pido una contraseÃ±a de mÃ­nimo 8 caracteres
 		while (password == null || password.isEmpty() || password.length() < 8) {
-			System.out.println("Introduzca su password. Mínimo 8 caracteres");
+			System.out.println("Introduzca su password. MÃ­nimo 8 caracteres");
 			password = sc.nextLine();
 		}
-		//genero la semilla con el usuario y contraseña
+		//genero la semilla con el usuario y contraseÃ±a
 		semilla = usuario + password;
 			
 	}
 
 	/*
-	 * Método para generar la pareja de claves
+	 * MÃ©todo para generar  claves
 	 */
-	private void generarParejaClaves() {
+	private void generarClaves() {
 		logger.log(Level.INFO, new Date() + " | Generando pareja de claves");	
 		KeyGenerator kg = null;
 		
 		//configuro el keyGenerator
 		try {
 			kg = KeyGenerator.getInstance("AES");			
-			//A partir de un número aleatorio con semilla la cadena del nombre de usuario + password
-			//Clase java.security.SecureRandom produce números aleatorios de calidad
+			//A partir de un nÃºmero aleatorio con semilla la cadena del nombre de usuario + password
+			//Clase java.security.SecureRandom produce nÃºmeros aleatorios de calidad
 			SecureRandom secureRandom = SecureRandom.getInstance("SHA1PRNG");
 			secureRandom.setSeed(semilla.getBytes());//asigno la semilla al objeto secureRandom
 			kg.init(128,secureRandom);//clave de longitud 128 bits
@@ -107,7 +107,7 @@ public class GenerarClave {
 		key = kg.generateKey(); //genero la clave
 
 		try {
-			cifrador = Cipher.getInstance("Rijndael/ECB/PKCS5Padding"); //objeto Cipher con la especificación del enunciado			
+			cifrador = Cipher.getInstance("Rijndael/ECB/PKCS5Padding"); //objeto Cipher con la especificaciÃ³n del enunciado			
 		} catch (NoSuchAlgorithmException | NoSuchPaddingException e1) {
 			logger.log(Level.SEVERE, new Date() +" | "+ e1.getMessage());
 			System.exit(1);
@@ -125,7 +125,7 @@ public class GenerarClave {
 
 	
 	/*
-	 * Método para guardar el fichero de texto encriptado
+	 * MÃ©todo para guardar el fichero de texto encriptado
 	 */
 	private void guardarTextoFicheroEncriptado() { // fichero encriptado de salida
 		logger.log(Level.INFO, new Date() +" | Guardando fichero encriptado");
@@ -182,11 +182,11 @@ public class GenerarClave {
 	
 	
 	public static void main(String[] args) {
-		//creación del objeto y llamadas a las métodos
+		//creaciÃ³n del objeto y llamadas a las mÃ©todos
 		GenerarClave generarClave = new GenerarClave();
 		generarClave.iniciarLog();
 		generarClave.pedirDatosUsuario();
-		generarClave.generarParejaClaves();
+		generarClave.generarClaves();
 		generarClave.guardarTextoFicheroEncriptado();
 		generarClave.desencriptar();
 		generarClave.cerrarLog();
