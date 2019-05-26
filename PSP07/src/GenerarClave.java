@@ -87,7 +87,7 @@ public class GenerarClave {
 	/*
 	 * Método para generar  claves
 	 */
-	private void generarClaves() {
+	private void generarClave() {
 		logger.log(Level.INFO, new Date() + " | Generando claves");	
 		KeyGenerator kg = null;
 		
@@ -99,7 +99,7 @@ public class GenerarClave {
 			SecureRandom secureRandom = SecureRandom.getInstance("SHA1PRNG");
 			secureRandom.setSeed(semilla.getBytes());//asigno la semilla al objeto secureRandom
 			kg.init(128,secureRandom);//clave de longitud 128 bits
-			logger.log(Level.INFO, new Date() +" claves generadas" );
+			logger.log(Level.INFO, new Date() +" clave generada" );
 		} catch (NoSuchAlgorithmException e) {
 			logger.log(Level.SEVERE, e.getMessage());
 		}
@@ -186,7 +186,7 @@ public class GenerarClave {
 		GenerarClave generarClave = new GenerarClave();
 		generarClave.iniciarLog();
 		generarClave.pedirDatosUsuario();
-		generarClave.generarClaves();
+		generarClave.generarClave();
 		generarClave.guardarTextoFicheroEncriptado();
 		generarClave.desencriptar();
 		generarClave.cerrarLog();
